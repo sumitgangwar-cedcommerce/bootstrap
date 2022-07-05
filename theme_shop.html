@@ -1,293 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-</style>
-<body>
-    <div class="container-fluid">
-       
-        <div class="container pt-4 border-bottom" >
-            <div class="row p-0">
-                <div class="col-4" >
-                    <a  href="" class="navbar-brand" style="color: black;"><b>Javelin</b></a>
-                </div>
-                <div class="col-8">
-                    <div class="row g-0">
-                        <div class="col">
-                            <a class="nav-link dropdown-toggle" style="color: black;" href="#" data-bs-toggle="dropdown">Home</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                <li><a class="dropdown-item" href="#">Link 3</a></li>
-                              </ul>
-                        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    
+    <title>Product Page</title>
+    <style>
+        input::placeholder{
+            color: whitesmoke;
+        }
+        #sale{
+            position: absolute;
+            top: 16px;
+            left: 360px;
+        }
+        #vertical{
+            text-align: center;
+            width: 40px;
+            margin-left: 435px;
+            display: flex;
+            flex-direction: column;
+            background-color: whitesmoke;
+            box-shadow: 3px 8px 8px #888888;
+            
+        }
+        .vertical_icons{
+          padding-right: 2px;
+        }
+        #caret{
+            box-shadow: 3px 8px 8px #888888;
+            top: 500px;
+            right: 5px;
+           
+        }
+        .breadcrumb-item{
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
 
-                        <div class="col">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;" href="#">Blog</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                <li><a class="dropdown-item" href="#">Link 3</a></li>
-                              </ul>
-                        </div>
+    <!-- NAVBAR/ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="#">Jevelin</a>
+        <ul class="nav d-flex">
+          <li class="nav-item dropdown justify-content-end">
+            <a
+              class="nav-link dropdown-toggle text-dark"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              home
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown justify-content-end">
+            <a
+              class="nav-link dropdown-toggle text-dark"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Blog
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown justify-content-end">
+            <a
+              class="nav-link dropdown-toggle text-dark"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Portfolio
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown justify-content-end">
+            <a
+            class="nav-link dropdown-toggle text-primary"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >
+              Shop
+              <sup><span class="badge rounded-pill bg-danger" style="font-size: 9px;">New</span></sup>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown justify-content-end">
+            <a
+              class="nav-link dropdown-toggle text-dark" 
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+             Variations
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+          </li>
+         
+           <li class="nav-item dropdown justify-content-end">
+            <a
+              class="nav-link dropdown-toggle text-dark" 
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+             Elements
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown justify-content-end m-2">
+            <button type="button" class="border-0 position-relative" style="background: none;">
+                <i class="fa fa-shopping-cart" aria-hidden="true" ></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary" style="font-size: 9px;">
+                  0
+                </span>
+            </button>
+          </li>
 
-                        <div class="col">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;" href="#">Portfolio</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                <li><a class="dropdown-item" href="#">Link 3</a></li>
-                              </ul>
-                        </div>
+          <li class="nav-item dropdown justify-content-end m-2">
+            <a href="" class="text-dark"><i class="fa fa-search" aria-hidden="true"></i></a>
+          </li>
+          
 
-                        <div class="col">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;" href="#">Shop  <sup ><span class="badge bg-danger">New</span><sup></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Link 3</a></li>
-                                  </ul>
-                        </div>
 
-                        <div class="col">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;" href="#">Variation</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                <li><a class="dropdown-item" href="#">Link 3</a></li>
-                              </ul>
-                        </div>
+        </ul>
+      </div>
+    </nav>
 
-                        <div class="col">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;" href="#">Elements</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                <li><a class="dropdown-item" href="#">Link 3</a></li>
-                              </ul>
-                        </div>
 
-                        <div class="col">
-                            <svg style="color: black;" xmlns="http://www.w3.org/2000/svg" width="25" height="40" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                            </svg><sup><span class="badge bg-primary">0</span><sup></sup>
-                        </div>
-                        <div class="col">
-                            <svg style="color: black;" xmlns="http://www.w3.org/2000/svg" width="25" height="40" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- BREADCRUMBS. -->
+    <div class="container m-lg-5 border-bottom">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item text-muted" >Home</li>
+              <li class="breadcrumb-item text-muted" aria-current="page">Shop</li>
+              <li class="breadcrumb-item" aria-current="page">android Phone</li>
+            </ol>
+          </nav>
+    </div>
+    
+    <!-- bottom to top icon. -->
+      <div class="contain">
+        <a id="caret" href="#" class="border-0 rounded-circle text-dark position-fixed"> <span class="material-symbols-outlined rounded p-0.8">
+          expand_less
+          </span>
+      </div>
+    </a>
 
-        <div class="border-bottom pt-5 container" style="height: 15vh;">
-            <button type="button" class="btn">Home</button> >
-            <button type="button" class="btn">Shop</button> >
-            <button type="button" class="btn"><b>Android Phone</b></button>
-        </div>
-
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-4">
-                    <img style="width:100%;height:100%;" src="/home/cedcoss/Desktop/phon.jpeg" alt="">
-                </div>
-                <div class="col-7">
-                    <div class="container-fluid">
-                        <div class="h3">Android Phone</div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div>
-                                    <b><span style="color: grey;" class='bi bi-currency-dollar'>199.00</span>
-                                        <span class='bi bi-currency-dollar h4'><span class="h3">179.00</span></span></b>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="ratings" style="color: rgb(243, 243, 69);">
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star"></i>
-                                    <span style="color: black;">(1 review)</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row pt-4">
-                            <div class="col-9">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo ipsam est veniam minima soluta, corrupti adipisci, assumenda eum consequuntur porro debitis officia repellat quas facilis rem. Enim, cum soluta.</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <a href="" class="btn rounded-circle m-3" style="background-color: rgb(212, 211, 211);"><i class="bi bi-arrow-down"></i></a><span> 1 </span>
-                                <a href="" class="btn rounded-circle m-3" style="background-color: rgb(212, 211, 211);"><i class="bi bi-arrow-up"></i></a>
-                            </div>
-                            <div class="col-6 pt-2" >
-                                <button class="bi bi-cart btn-primary px-4 pt-2 pb-2"> Add to cart</button>
-                            </div>
-                        </div>
-                        <div class="row pt-5">
-                            <div class="col-6">
-                                <p><b>SKU:</b>12</p>
-                                <p><b>Category:</b>Phones</p>
-                                <p><b>Tag:</b>Screen</p>
-                                <a href="" class="btn" style="background-color: rgb(212, 211, 211);"><i class="bi bi-share rota fa-rotate-180"></i>Share</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- SECTION 1 -->
+    <div class="container">
+        <div class="row">
+            <!-- column 1 -->
+            <div class="col position-relative">
+                <!-- image. -->
                 
+                <img src="https://thumbs.dreamstime.com/b/smartphones-mockup-one-behind-other-front-side-white-screen-tilt-back-falling-down-rotated-sides-shadows-background-108747745.jpg" alt="" style="width: 400px; height: 400px;" class="border bg-secondary rounded">
+                <span id="sale" class="badge rounded-pill bg-danger" style="font-size: 10px;">Sale!</span>
             </div>
-        </div>
-        <div class="container row">
-            <div class="col-4"></div>
-            <div class="col-6 pt-5 mx-5">
-                <ul class="nav nav-bar border-bottom" role="tablist">
+            <!-- column2 -->
+            <div class="col position-relative">
+                <h2 class="font-weight-bold">Android Phone</h2>
+            <!-- VERTICAL NAVBAR. -->
+                <nav class="nav flex-column position-fixed" id="vertical">
+                  <a class="nav-link text-muted vertical_icons " href="#"><i class="fa-solid fa-layer-group"></i></a>
+                  <a class="nav-link text-muted vertical_icons" href="#"><i class="fa-brands fa-accusoft"></i></a>
+                  <a class="nav-link text-muted vertical_icons" href="#"><i class="fa-regular fa-folder-open"></i></a>
+                  <a class="nav-link text-muted vertical_icons" href="#"><i class="fa-solid fa-gear"></i></a>
+                  <a href="#" class="nav-link text-muted vertical_icons"><i class="fa-solid fa-envelope"></i></a>
+                  <a href="#" class="nav-link text-muted vertical_icons"><span class="material-symbols-outlined">
+                      help
+                  </nav>
+                  </a>
+                  
+                </nav>
+                <!-- price -->
+                <p>
+                    <span class="text-secondary m-2" style="font-weight: bolder;">$199.00</span>
+                    <span style="font-weight: bolder;">$179.00</span>
+                    <span style="float: right;">
+                        <i class="fa-solid fa-star" style="color: #f3da35;"></i>
+                        <i class="fa-solid fa-star" style="color: #f3da35;"></i>
+                        <i class="fa-solid fa-star" style="color: #f3da35;"></i>
+                        <i class="fa-solid fa-star" style="color: #f3da35;"></i>
+                        <i class="fa-solid fa-star" style="color: #f3da35;"></i>
+                        (1 review)
+                    </span>
+                </p>
+                
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A corrupti, praesentium ipsa dolorem sed reiciendis saepe maxime id dolor cumque!</p>
+                <!-- arrows -->
+                <a href=""><span class="p-3 rounded-circle m-2" style="color: rgb(175, 172, 172); background-color: rgb(238, 236, 234);"><i class="fa-solid fa-arrow-down"></i></span></a>
+                <span style="font-weight: bolder; font-size: large;">1</span>
+                <a href=""><span class="p-3 rounded-circle m-2" style="color: rgb(175, 172, 172); background-color: rgb(238, 236, 234);"><i class="fa-solid fa-arrow-up"></i></span></a>
+                <span style="float: right;"><button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="ms-2">Add to cart</span></button></span>
+                <!-- DETAILS. -->
+                <p class="mt-4 font-weight-bold">SKU: <span class="text-secondary ms-1">12</span></p>
+                <p>category: <span class="text-primary">Phones</span></p>
+                <p>Tag: <span class="text-secondary ms-1">Screen</span></p>
+                <button class="border-0 px-2 py-1"><span><i class="fa-solid fa-share-nodes me-3" style="color: rgb(78, 78, 78);"></i></span><span style="color: rgb(78, 78, 78);">Share</span></button>
+
+                <!-- DYNAMIC TABS. -->
+                <ul class="nav mt-5 border-bottom">
                     <li class="nav-item">
-                      <a class="nav-link active" data-bs-toggle="tab" href="#home">Description</a>
+                      <a class="nav-link text-primary border-bottom border-primary" data-bs-toggle="tab" href="#home">Description</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" data-bs-toggle="tab" href="#menu1">Reviews(1)</a>
+                      <a class="nav-link text-dark" data-bs-toggle="tab" href="#review">Reviews(1)</a>
                     </li>
+                    
                   </ul>
+                  <!-- description/ -->
                   <div class="tab-content">
+
                     <div id="home" class="container tab-pane active"><br>
                       <h3>Description</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div id="menu1" class="container tab-pane fade"><br>
-                      <h3>Review</h3>
-                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        <div class="container m-5 p-5 ">
-            <div class="row mt-5 pt-5">
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-2"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                          </svg>
-                        </div>
-                        <div class="col-10">
-                            <p><b>Free Shipping</b></p>
-                            <p>for purchase over 5$</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-2"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-shield" viewBox="0 0 16 16">
-                            <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
-                          </svg>
-                        </div>
-                        <div class="col-10">
-                            <p><b>Secure Payment</b></p>
-                            <p>for online transication</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-2"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-lightning-charge" viewBox="0 0 16 16">
-                            <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z"/>
-                          </svg>
-                        </div>
-                        <div class="col-10">
-                            <p><b>Same day shipping</b></p>
-                            <p>for purchase till 6pm EST</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fulid" style="background-color: rgb(20, 48, 83);">
-            <div class="container mt-5" >
-                <div class="row border-bottom">
-                    <div class="col-2 p-5" style="color: white;"><h1>Jelvin</h1></div>
-                    <div class="col-6"></div>
-                    <div class="col-4 p-5 " style="font-size: 3vh; color: rgb(219, 219, 219);">
-                        <div class="row">
-                            <div class="col"><i class="bi bi-twitter"></i></div>
-                            <div class="col"><i class="bi bi-instagram"></i></div>
-                            <div class="col"><i class="bi bi-youtube"></i></div>
-                            <div class="col"><i class="bi bi-whatsapp"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5" style="color: white;">
-                    <div class="col-3">
-                        <p style="font-size: 4vh;">Start Crafting Epic <b>website</b> Today!</p>
-                        <button class="btn-primary px-4 pt-2 pb-2">Purchase theme</button>
-                    </div>
-                    <div class="col-3">
-                        <h5>Useful</h5>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="col-3">
-                        <h5>Keep in touch</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, deserunt.<b>support@abc.com</b> </p>
-                    </div>
-                    <div class="col-3">
-                        <h5>Sign up for Newsletter</h5>
-                        <div class="row">
-                            <div class="col-8 "><input class="px-3 bg-dark" type="text" placeholder="E-mail Address " style="width: 100%;" ></div>
-                            <div class="col-4"><button class="btn rounded border">Send</button></div>
-                            <p style="font-size: 1vh;">*information is not disclosed to third party</p>
-                        </div>
-                    </div>
-                    <div class="row mt-5 mb-5 pt-5" style="font-size: 2vh;">
-                        <div class="col-4">&copy;2021 Jalvin crafted by <b>Shuffelhound</b></div>
-                        <div class="col-4"></div>
-                        <div class="col-2">Privacy Policy</div>
-                        <div class="col-2">Terms and Condition</div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            
-           
-            
-            <style>
-                .vertical-menu {
-                  text-align: center;  
-                  position: relative;
-                  width: 10vh;
-                  margin-top: -220vh;
-                  margin-left: 140vh;
-                  font-size: 5vh;
-                }
-                
-                .vertical-menu a {
-                  background-color: rgb(247, 247, 247);
-                  height: 10vh;
-                  color: black;
-                  display: block;
-                  padding: 12px;
-                  text-decoration: none;
-                }
 
-                </style>
-                <div class="vertical-menu">
-                  <a href="#"><i class="bi bi-layers"></i></a>
-                  <a href="#"><i class="bi bi-eyeglasses"></i></a>
-                  <a href="#"><i class="bi bi-bag"></i></a>
-                  <a href="#"><i class="bi bi-question-circle"></i></a>
-                  <a href="#"><i class="bi bi-envelope"></i></a>
+                    <div id="review" class="container tab-pane fade"><br>
+                        <h3>Review</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="container d-flex justify-content-between my-4 border-top">
+        <!-- 1st span. -->
+        <span class="d-flex my-5"> 
+            <i class="fa fa-shopping-cart text-primary mt-3" aria-hidden="true" style="font-size: 22px;"></i>
+            <span class="justify-content-end ms-3"><h5>Free Shipping</h5>
+                <p>For purchases over $50</p>
+            </span>
+        </span>
+        <!-- 2nd span, -->
+        <span class="d-flex my-5">
+            <span class="material-symbols-outlined text-primary mt-3" style="font-size: 22px;">
+                gpp_bad
+                </span>
+            <span class="justify-content-end ms-3"><h5>Security Payment</h5>
+                <p>for online transactions</p>
+            </span>
+        </span>
+        <span class="d-flex my-5">
+            <i class="fa-solid fa-bolt text-primary mt-3" style="font-size: 22px;"></i>
+            <span class="justify-content-end ms-3"><h5>same day shipping</h5>
+                <p>for purchases till 6:00 PM EST</p>
+            </span>
+        </span>
+    </div>
+
+    <!-- FOOTER. -->
+    <div class="container bg-dark text-light" style="z-index: -1;">
+        <div class="container my-5 py-5 border-bottom">
+            <a class="navbar-brand text-light" href="#">Jevelin</a>
+            <span style="float: right;">
+                <a href="" class="text-white"><i class="fa-brands fa-twitter m-2"></i></a>
+                <a href="" class="text-white"><i class="fa-brands fa-instagram m-2"></i></a>
+                <a href="" class="text-white"><i class="fa-brands fa-youtube m-2"></i></a>
+                <a href="" class="text-white"><i class="fa-brands fa-whatsapp m-2"></i></a>
+            </span>
+        </div>
+        <div class="container mt-lg-5 d-flex justify-content-between">
+            <span style="font-size: 15px;">
+                <p >Start Crafting</p>
+                <p>Epic Websites</p>
+                <p >Today!</p>
+                <button class="bg-primary border-0 text-light rounded" style="font-size: 13px;">Purchase Theme</button>
+            </span>
+            <span style="font-size: 15px;">
+                <p>Useful</p>
+                <p>Documentation into video buy.</p>
+            </span>
+            <span style="font-size: 15px;">
+                <p>Keep in Touch</p>
+                <p >Osaka,Crimson street  78-42</p>
+                <p >(10AM-6PM EST, Mon-Fri)</p>
+                <p >support @brand.com</p>
+            </span>
+            <span style="font-size: 15px;">
+                <p>SignUp for Newsletter</p>
+                <input type="text" name="email" id="email" placeholder="E-Mail Address"
+                style="width: 170px; background-color: rgb(104, 102, 102);" class="rounded ">
+                <button style="background-color: rgb(104, 102, 102);" class="text-light border-0 rounded">Send</button>
+                <p>*Information is not disclosed to third parties.</p>
+            </span>
+        </div>
+
+        <div class="container mt-lg-5">
+            <div class="row">
+                <div class="col-7 my-5">
+                    <span>&copy; jevelin. Created by Shufflehound</span>
                 </div>
-            
-    </div>   
-</body>
+                <div class="col-2 my-5">
+                    <span>Privacy Poilcy</span>
+                </div>
+                <div class="col-3 my-5">
+                    <span>Terms & Conditions</span>
+                </div>
+            </div>
+        </div>
+           
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
